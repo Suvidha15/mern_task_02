@@ -1,0 +1,187 @@
+/* ===========================
+   Global Styles
+=========================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6fc;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #5c6bc0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  background-color: #5c6bc0;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #ff5252;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navbar button:hover {
+  background-color: #ff1744;
+}
+
+/* ===========================
+   Card Container (Login / Signup)
+=========================== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+  color: #5c6bc0;
+  font-size: 2rem;
+}
+
+.card input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.card input:focus {
+  border-color: #5c6bc0;
+  box-shadow: 0 0 5px rgba(92, 107, 192, 0.4);
+}
+
+.card button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #5c6bc0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #3949ab;
+}
+
+.card .message {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #ff5252;
+}
+
+.card .link {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   Home Page
+=========================== */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f6fc;
+}
+
+.home-card {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.home-title {
+  color: #5c6bc0;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-message {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  padding: 0.8rem 1.2rem;
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff1744;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 500px) {
+  .card, .home-card {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
