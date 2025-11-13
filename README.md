@@ -118,5 +118,4 @@ npm start
 ## **Credits**
 
 This project was **developed by Trashika S Karkera**.
-* JWT token expires in 1 hour.
-* Passwords are securely hashed using **bcrypt**.
+
