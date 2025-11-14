@@ -3,14 +3,15 @@
 =========================== */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f6fc;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+  background-size: cover;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #5c6bc0;
+  color: #ffe082;
 }
 
 a:hover {
@@ -24,15 +25,17 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
-  background-color: #5c6bc0;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 .navbar div {
@@ -42,17 +45,18 @@ a:hover {
 }
 
 .navbar button {
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   border: none;
-  background-color: #ff5252;
+  background: linear-gradient(135deg, #ff6f6f, #c62828);
   color: #fff;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
 }
 
 .navbar button:hover {
-  background-color: #ff1744;
+  transform: scale(1.05);
 }
 
 /* ===========================
@@ -66,62 +70,73 @@ a:hover {
 }
 
 .card {
-  background-color: #fff;
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 2.5rem;
+  border-radius: 15px;
   width: 100%;
   max-width: 400px;
   text-align: center;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
 .card h2 {
   margin-bottom: 1.5rem;
-  color: #5c6bc0;
-  font-size: 2rem;
+  color: #ffe082;
+  font-size: 2.1rem;
+  font-weight: 600;
 }
 
 .card input {
   width: 100%;
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 1rem;
   margin-bottom: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
   font-size: 1rem;
   outline: none;
-  transition: all 0.2s ease;
+  transition: 0.3s ease;
+}
+
+.card input::placeholder {
+  color: #eee;
 }
 
 .card input:focus {
-  border-color: #5c6bc0;
-  box-shadow: 0 0 5px rgba(92, 107, 192, 0.4);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .card button {
   width: 100%;
-  padding: 0.8rem;
-  background-color: #5c6bc0;
-  color: #fff;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #ffe082, #ffb300);
+  color: #333;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .card button:hover {
-  background-color: #3949ab;
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ffca28, #ffb300);
 }
 
 .card .message {
   margin-top: 1rem;
   font-weight: 500;
-  color: #ff5252;
+  color: #ff8a80;
 }
 
 .card .link {
   margin-top: 1rem;
-  color: #333;
+  color: #fff;
   font-size: 0.9rem;
 }
 
@@ -133,55 +148,59 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f4f6fc;
 }
 
 .home-card {
-  background-color: #fff;
-  padding: 2rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
   text-align: center;
   width: 100%;
   max-width: 500px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
 .home-title {
-  color: #5c6bc0;
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
+  color: #ffe082;
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
 }
 
 .home-message {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fce4ec;
 }
 
 .logout-btn {
-  padding: 0.8rem 1.2rem;
-  background-color: #ff5252;
+  padding: 0.9rem 1.4rem;
+  background: linear-gradient(135deg, #ff6f6f, #c62828);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: 0.3s ease;
 }
 
 .logout-btn:hover {
-  background-color: #ff1744;
+  transform: scale(1.05);
 }
 
 /* ===========================
    Responsive
 =========================== */
 @media (max-width: 500px) {
-  .card, .home-card {
-    padding: 1.5rem 1.5rem;
+  .card,
+  .home-card {
+    padding: 1.8rem;
   }
 
   .navbar {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.7rem;
   }
 }

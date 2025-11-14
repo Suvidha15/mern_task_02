@@ -36,7 +36,7 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home-card">
-        <h1 className="home-title">🏠 Home Page</h1>
+        <h1 className="home-title">Welcome to Home Page</h1>
         <p className="home-message">{message}</p>
         <button className="logout-btn" onClick={handleLogout}>
           Logout
